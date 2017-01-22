@@ -2,26 +2,17 @@
 
 namespace Gugu;
 
-use Composer\Script\Event;
-
+use Composer\Installer\PackageEvent;
 
 Class Test
 {
     public static function Test()
     {
-        echo "ocouou";
+        echo dirname(__DIR__);
     }
 
-    public static function postPackageInstall(Event $event)
+    public static function postPackageInstall(PackageEvent $event)
     {
-        $io = $event->getIO();
-        var_dump($event->getComposer()->getPackage()->);
 
-//        if ($io->askConfirmation("Are you sure you want to proceed? ", false)) {
-//            // ok, continue on to composer install
-//            return true;
-//        }
-        // exit composer and terminate installation process
-        exit;
     }
 }

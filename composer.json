@@ -1,6 +1,8 @@
 {
-    "name": "sniphpet/test",
-    "require": {},
+    "name": "gugu/test",
+    "require": {
+        "composer/composer": "^1.3"
+    },
     "autoload": {
         "psr-4": {
             "Gugu\\": "src/"
@@ -8,11 +10,8 @@
     },
     "scripts": {
         "test": "Gugu\\Test::test",
-        "post-install-cmd": [
+        "post-package-install": [
             "Gugu\\Test::postPackageInstall"
         ]
-    },
-    "require-dev": {
-        "composer/composer": "^1.3"
     }
 }
