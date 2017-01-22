@@ -12,6 +12,9 @@
         "test": "Gugu\\Test::test",
         "post-package-install": [
             "Gugu\\Test::postPackageInstall"
+        ],
+        "post-install-cmd": [
+            "Gugu\\Test::postPackageInstall"
         ]
     }
 }

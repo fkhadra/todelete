@@ -13,6 +13,6 @@ Class Test
 
     public static function postPackageInstall(PackageEvent $event)
     {
-
+        echo "hook";
     }
 }
